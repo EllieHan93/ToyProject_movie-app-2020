@@ -1,15 +1,20 @@
 import React from 'react';
 
-function Potato() {
-    return <h1 > I love Potato < /h1>;
+function Food(props) {
+    // console.log(props)
+    // return <h1> I love Potato</h1>;
+    return <h1> I love {props.fav}</h1>;
 }
-
 function App() {
-    return ( <
-        div >
-        <
-        h1 > Hello < /h1> <
-        Potato / > < /div >
+    return (
+        <div>
+            <h1>Hello</h1>
+            {/* <Food fav="kimchi" somthing={true} papapapa={['hello', 1, 2, 3, 4, true]} /> */}
+            <Food fav="kimchi" />
+            <Food fav="remon" />
+            <Food fav="samgiopsal" />
+            <Food fav="chukmi" />
+        </div>
     );
 }
 
