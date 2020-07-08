@@ -1,9 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+function Potato() {
+    return <h1 > I love Potato < /h1>;
+}
 
 function App() {
-    return <div > hello < /div>;
+    return ( <
+        div >
+        <
+        h1 > Hello < /h1> <
+        Potato / > < /div >
+    );
 }
 
 export default App;
